@@ -2,8 +2,8 @@
 // Created by shh03 on 2020/12/5.
 //
 
-#ifndef MYBST_BINARYSORTTREE_H
-#define MYBST_BINARYSORTTREE_H
+#ifndef BINARYSORTTREE_H
+#define BINARYSORTTREE_H
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -38,8 +38,8 @@ BSTNodePtr InitBST();
 
 /*
  * CreateBSTbyArray: 根据Record数组创建BST
- * @param: Record数组名
- * @return: 数组长度
+ * @param r: 记录数组名
+ * @param len: 数组长度
  */
 BSTNodePtr CreateBSTbyArray(Record *r, int len);
 
@@ -86,13 +86,15 @@ void _MiddleOrderBST(BSTNodePtr nodep);
 /*
  * SearchMaxBST: 找到BST中记录中键最大的结点
  * @param BSTNodePtr nodep: 外部调用时，此参数应为根节点指针
+ * @return BSTNodePtr: 返回查找到的结点
  */
 BSTNodePtr SearchMaxBST(BSTNodePtr nodep);
 
 /*
  * SearchMaxBST: 找到BST中记录中键最小的结点
  * @param BSTNodePtr nodep: 外部调用时，此参数应为根节点指针
+ * @return BSTNodePtr: 返回查找到的结点
  */
 BSTNodePtr SearchMinBST(BSTNodePtr nodep);
 
-#endif //MYBST_BINARYSORTTREE_H
+#endif //BINARYSORTTREE_H
